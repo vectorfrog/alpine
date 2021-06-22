@@ -5,8 +5,14 @@
         <title>Webpack App</title>
     </head>
     <body>
-        <h1 class="bg-red-500">Hello world!</h1>
-        <h2>Tip: Check your console</h2>
+      <div id="container">
+        <h1 class="text-4xl text-gray-900">Count</h1>
+        <div id="content" x-data="{count: 0}">
+          <p>The current count is <strong x-text="count"></strong>.</p>
+          <button type="button" @click="count=count-1">-1</button>
+          <button type="button" @click="count=count+1">+1</button>
+        </div>
+      </div>
     </body>
     
 </html>
